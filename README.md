@@ -1,7 +1,5 @@
-# A-Frame Examples
+# A-Frame video
 
-The goal of this collection is to provide a set of basic and instructive examples that introduce the various features of the A-Frame library, and to introduce new A-Frame components.
+Examples can be viewed using a normal web browser. 
 
-Examples can be viewed using a normal web browser. Some examples contain interactive virtual reality components that require a VR headset (Oculus Quest). 
-
-View the examples online at https://stemkoski.github.io/A-Frame-Examples/.
+Online Examples at https://stemkoski.github.io/A-Frame-Examples/.

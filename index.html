@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=firefox" />
 
 	<script src="js/aframe-master-v1.3.0.min.js"></script>
-	<script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
+	
 </head>
 
 <body>
@@ -45,7 +45,6 @@ AFRAME.registerComponent('video-controls', {
 </script>
 
 <a-scene
- gesture-detector
   vr-mode-ui="enabled: false" 
 >
 	<a-assets timeout="10000">
@@ -86,8 +85,6 @@ AFRAME.registerComponent('video-controls', {
 			width="16" height="9" 
 			position="0 0 0.1"
 			src="#video"
-			class="clickable"
-			gesture-handler
 		>
 
 		</a-video>

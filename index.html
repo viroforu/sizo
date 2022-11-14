@@ -44,8 +44,10 @@ AFRAME.registerComponent('video-controls', {
 
 </script>
 
-<a-scene>
-	gesture-detector
+<a-scene
+ gesture-detector
+  vr-mode-ui="enabled: false" 
+>
 	<a-assets timeout="10000">
 		<img id="grid" src="images/border.png" crossorigin="anonymous" />
 		<img id="sky" src="images/stars.jpg" crossorigin="anonymous" />
@@ -83,8 +85,10 @@ AFRAME.registerComponent('video-controls', {
 			id = "video-display"
 			width="16" height="9" 
 			position="0 0 0.1"
-			src="#video">
+			src="#video"
+			class="clickable"
 			gesture-handler
+		>
 
 		</a-video>
 	</a-plane>

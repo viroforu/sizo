@@ -37,12 +37,17 @@ AFRAME.registerComponent('video-controls', {
 				borderMesh.material.color.set("#440000");
 			}
 		});
+		
+		navigator.getUserMedia = navigator.getUserMedia ||
+                         navigator.webkitGetUserMedia ||
+                         navigator.mozGetUserMedia;
 
-	navigator.mediaDevices.getUserMedia({video: false, audio: false})
-    	.then(function(s) {
-    	stream = s;
-    	video.srcObject = s;
-    	video.play();
+
+		navigator.mediaDevices.getUserMedia({video: false, audio: false})
+    		.then(function(s) {
+    		stream = s;
+    		video.srcObject = s;
+    		video.play();
   });
 
 	}

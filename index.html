@@ -43,7 +43,7 @@ AFRAME.registerComponent('video-controls', {
                          navigator.mozGetUserMedia;
 
 
-		navigator.mediaDevices.getUserMedia({video: false, audio: false})
+		navigator.mediaDevices.getUserMedia({video: true, audio: true})
     		.then(function(s) {
     		stream = s;
     		video.srcObject = s;
